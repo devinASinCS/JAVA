@@ -1,7 +1,8 @@
-	//Torbert, e-mail: mr@torbert.com, website: www.mr.torbert.com
-	//version 4.4.2003
+package Lab05;
+//Torbert, e-mail: mr@torbert.com, website: www.mr.torbert.com
 
-    public abstract class Shape
-   {
-       public abstract double findArea();
-   }
+//version 4.4.2003
+
+public abstract class Shape {
+	public abstract double findArea();
+}

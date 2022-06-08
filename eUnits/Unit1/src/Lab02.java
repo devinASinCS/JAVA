@@ -6,6 +6,7 @@ public class Lab02 {
 		// TODO Auto-generated method stub
 		Display.openWorld("maps/maze.map");
 		Display.setSize(8, 8);
+		Display.setSpeed(7);
 		Athlete athlete = new Athlete();
 		athlete.putAndMove(1);
 		athlete.turnRight();

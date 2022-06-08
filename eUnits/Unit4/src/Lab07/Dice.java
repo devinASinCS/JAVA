@@ -1,4 +1,5 @@
-	//Name______________________________ Date_____________
+package Lab07;
+//Name______________________________ Date_____________
    public class Dice
    {
       private int myOne, myTwo;
@@ -9,27 +10,16 @@
       }
       public void roll()
       {
-         	/************************/
-         	/*                      */
-         	/* Your code goes here. */
-         	/*                      */
-         	/************************/
+         	myOne = random();
+         	myTwo = random();
       }
       public int total()
       {
-         	/************************/
-         	/*                      */
-         	/* Your code goes here. */
-         	/*                      */
-         	/************************/
+         	return myOne + myTwo;
       }
       public boolean doubles()
       {
-         	/************************/
-         	/*                      */
-         	/* Your code goes here. */
-         	/*                      */
-         	/************************/
+         	return (myOne == myTwo);
       }
       public String toString()
       {

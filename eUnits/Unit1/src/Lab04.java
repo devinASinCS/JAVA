@@ -15,13 +15,14 @@ public class Lab04 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Display.openWorld("maps/arena.map");
+		Display.setSpeed(9);
 		Athlete a = new Athlete();
 		Athlete b = new Athlete();
 		Athlete c = new Athlete();
 		Athlete d = new Athlete();
 		Athlete e = new Athlete();
 		Athlete f = new Athlete();
-		Athlete coach = new Athlete(2,7,Display.EAST,0);
+		Athlete coach = new Athlete();
 		
 		takeTheField(a);
 		a.move();
@@ -65,6 +66,15 @@ public class Lab04 {
 		f.move();
 		f.move();
 		f.turnRight();
+		
+		coach.move();
+		coach.move();
+		coach.move();
+		coach.move();
+		coach.move();
+		coach.move();
+		coach.turnRight();
+		coach.move();
 
 	}
 

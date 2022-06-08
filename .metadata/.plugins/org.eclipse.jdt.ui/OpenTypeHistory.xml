@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=Unit1/\/SetupFiles\/karel2_c.jar&lt;edu.fcps(Digit.class[Digit" modifiers="1025" timestamp="-1"/>
+    <typeInfo handle="=Unit1/src&lt;{Athlete.java[Athlete" modifiers="1" timestamp="1645377780665"/>
+    <typeInfo handle="=Unit1/\/SetupFiles\/karel2_c.jar&lt;edu.fcps.karel2(Robot.class[Robot" modifiers="1" timestamp="-1"/>
+    <typeInfo handle="=Unit2/src&lt;Lab20{Spot.java[Spot" modifiers="1" timestamp="1650002386229"/>
+    <typeInfo handle="=Unit4/src&lt;Lab05{Shape.java[Shape" modifiers="1025" timestamp="1651842011244"/>
+    <typeInfo handle="=Unit2/C:\/Program Files\/Java\/jdk-17.0.2\/lib\/jrt-fs.jar`java.desktop=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/&lt;javax.swing(JPanel.class[JPanel" modifiers="33" timestamp="1645097031662"/>
+    <typeInfo handle="=Unit2/\/SetupFiles\/karel2_c.jar&lt;edu.fcps(Turtle.class[Turtle" modifiers="1025" timestamp="-1"/>
+</typeInfoHistroy>

@@ -29,7 +29,7 @@
       {
          Display.openWorld("maps/spiral.map");
          Display.setSize(10, 10);
-         Display.setSpeed(8);
+         Display.setSpeed(10);
          if(Math.random() < 0.5)
          {
             work_8x8_square( new Harvester(2, 2) );

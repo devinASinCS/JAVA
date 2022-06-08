@@ -1,25 +1,31 @@
-   //Name______________________________ Date_____________
+package Lab03;
+//Name______________________________ Date_____________
    import java.io.*;      //the File class
    import java.util.*;    //the Scanner class
    
-    public class Driver03
-   {
-      public static final int NUMITEMS = 20;
-       public static void main(String[] args) throws Exception
-      {
-         Scanner infile = new Scanner( new File("data.txt") );
-      	
-      	//read the text file into the array
-      	
-      	
-      	//process the array
-      	
-      	
-      	//output
-      	
-      	
-      	}
-   }
+	public class Driver03 {
+		public static final int NUMITEMS = 20;
+
+		public static void main(String[] args) throws Exception {
+			Scanner infile = new Scanner(new File("src/Lab03/data.txt"));
+
+			// read the text file into the array
+			double[] array = new double[NUMITEMS];	
+			double[] C = new double[NUMITEMS];
+			for(int x = 0; x < NUMITEMS; x++) {
+				array[x] = infile.nextDouble();
+				C[x] = (array[x] - 32) * 5d / 9d;
+			}
+			infile.close();
+			// process the array
+			System.out.println("Fahrenheit\t| Celsius");
+			System.out.println("----------------|----------------");
+			for(int i = 0; i < NUMITEMS; ++i) {
+				System.out.println(array[i] + "\t| " + C[i]);
+			}
+
+		}
+	}
 	/************************************
 	Fahrenheit      | Celsius
 	----------------|-------------------

@@ -22,8 +22,10 @@
       }
        public static void main(String[] args) 
       {
-         String filename = JOptionPane.showInputDialog("What robot world?");
-         String type = JOptionPane.showInputDialog("What type of racer?");
+    	 String[] fileNameOption = {"hurdle1", "hurdle2", "hurdle3", "steeple1", "steeple2", "steeple3", "boxtop1", "boxtop2","boxtop3"};
+         String filename = (String)JOptionPane.showInputDialog(null,"What robot world?",null,JOptionPane.QUESTION_MESSAGE,null,fileNameOption,"hurdle1");
+         String[] typeOption = {"Racer", "SteepleChaseRacer", "BoxTopRacer"};
+         String type = (String)JOptionPane.showInputDialog(null,"What type of racer?",null,JOptionPane.QUESTION_MESSAGE,null,typeOption,"Racer");
       
        Display.openWorld("maps/"+filename+".map");
          Display.setSize(18, 16);

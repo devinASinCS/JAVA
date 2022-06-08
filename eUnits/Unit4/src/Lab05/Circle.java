@@ -1,4 +1,5 @@
-	/*****************************************************************
+package Lab05;
+/*****************************************************************
 	* A Circle is a Shape that maintains information about its radius. A Circle
 	* knows how to return its radius, set its radius, calculate and return its 
 	* area, and calculate and return its circumference.
@@ -16,7 +17,7 @@
    	**************************************************************/
        public Circle(double x)
       {
-         // your code goes here
+    	   myRadius = x;
       }
    	
    	/*************************************************************** 
@@ -25,7 +26,7 @@
    	**************************************************************/
        public double getRadius()
       {
-         // your code goes here
+    	   return myRadius;
       }
 		
    	/***************************************************************
@@ -34,7 +35,7 @@
    	**************************************************************/
        public void setRadius(double x)
       {
-         // your code goes her
+    	   myRadius = x;
       }
 		
    	/***************************************************************
@@ -43,7 +44,7 @@
    	**************************************************************/
        public double findArea()
       {
-         // your code goes here
+    	   return Math.pow(myRadius, 2) * Math.PI;
       }
 		
    	/**************************************************************
@@ -52,6 +53,6 @@
    	**************************************************************/
        public double findCircumference()
       {
-         // your code goes here
+    	   return Math.PI * 2 *myRadius;
       }
    }

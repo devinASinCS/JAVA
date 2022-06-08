@@ -1,7 +1,11 @@
-	// Phil Ero 15JUL08
+package Lab14;
 	
    import javax.swing.*;
-   import java.awt.*;
+
+import Lab10.Polkadot;
+import Lab11.Ball;
+
+import java.awt.*;
    import java.awt.event.*;
    import java.awt.image.*;
    
@@ -31,19 +35,25 @@
          myBuffer = myImage.getGraphics();
          
          // create ball and jump
-      
+         ball = new Ball();
+         ball.jump(FRAME, FRAME);
       
          // create prize and jump
-      
+         prize = new Polkadot();
+         prize.jump(FRAME, FRAME);
             
          // create bumper and jump
-      
-      	
+         bumper = new Bumper();
+         bumper.jump(FRAME, FRAME);
          // ensure ball is outside the bumper
-      
+         while(bumper.inBumper(ball)){
+        	 ball.jump(FRAME, FRAME);
+         }
         
       	// ensure prize is outside the bumper
-      
+         while(bumper.inBumper(prize)) {
+        	 prize.jump(FRAME, FRAME);
+         }
       
          hits = 0;
          timer = new Timer(5, new Listener());
@@ -74,9 +84,9 @@
             bumper.draw(myBuffer);
             
          	// ensure the prize did not jump inside the bumper
-            while(bumper.inBumper(prize))
+            while(bumper.inBumper(prize)) {
                prize.jump(FRAME, FRAME);
-         
+            }
             // update hits on buffer
             myBuffer.setColor(Color.black);
             myBuffer.setFont(new Font("Monospaced", Font.BOLD, 24));
